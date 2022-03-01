@@ -1,0 +1,368 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+body{
+  background-color: black;
+}
+#navbar{
+  position: absolute;
+  top:0;
+  margin: 0px;
+  width: 100%;
+  height: 9em;
+  transition: top 1s;
+}
+@keyframes navup  {
+  0%{
+    top:0;
+  }
+  100%{
+    top:-10em;
+  }
+}
+@keyframes navdown  {
+  0%{
+    top:-10em;
+  }
+  100%{
+    top:0em;
+  }
+}
+@keyframes searchup  {
+  0%{
+    top:15em;
+  }
+  100%{
+    top:5em;
+  }
+}
+@keyframes searchdown  {
+  0%{
+    top:5em;
+  }
+  100%{
+    top:15em;
+  }
+}
+
+.logo img{
+  position: absolute;
+  top:-110px;
+  left:2em;
+width: 350px;
+}
+#menu-icon{
+  position: absolute;
+  top:22px;
+  right:50px;
+  color: white;
+  cursor: pointer;
+  font-size: 90px;
+}
+#navbartoggle{
+  width: 61.2em;
+  height: 100vh;
+  position: absolute;
+  top:0;
+  left:-15em;
+transition: right 1s;
+background-color: black;
+visibility: hidden;
+z-index: 1;
+}
+@keyframes navopen {
+  0%{
+    visibility: hidden;
+    left:-15em;
+  }
+  100%{
+    visibility: visible;
+    left:0px;
+  }
+}
+@keyframes navclose {
+  0%{
+    visibility: visible;
+    left:0px;
+  }
+  100%{
+    visibility: hidden;
+    left:-15em;
+
+  }
+}
+
+.nav-items{
+  list-style: none;
+  position: absolute;
+  left:18em;
+  top:25em;
+  height: 50vh;
+}
+.menu-txt{
+  color: white;
+  font-weight: bolder;
+position: absolute;
+  top: 40px;
+  left:50px;
+  font-size: 80px;
+}
+.nav-items li{
+  text-align: center;
+
+}
+.nav-items li a{
+  line-height: 250px;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  font-size: 60px;
+  text-decoration: none;
+}
+.nav-items li:hover{
+  color: red;
+  transform: scale(1.1);
+}
+
+#close{
+  position: absolute;
+  top: 40px;
+  left:13em;
+  color: white;
+  font-size: 70px;
+  cursor: pointer;
+}
+#img-container-2{
+  position: absolute;
+  width: 39em;
+  height: 44vh;
+  top:30em;
+  left:12.2em;
+  border: 1px solid red;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.img2{
+  width: 100%;
+  height: 100%;
+position: absolute;
+top:0em;
+left:0em;
+z-index: -1;
+}
+#img-container-1{
+  position: absolute;
+  width: 39em;
+  height: 44vh;
+  top:30em;
+  left:12.2em;
+
+}
+
+.img1{
+  width: 100%;
+  height: 100%;
+position: absolute;
+top:0em;
+left:0em;
+z-index: -1;
+
+}
+.img-container-3{
+  position: absolute;
+  width: 39em;
+  height: 44vh;
+  top:30em;
+  left:12.2em;
+  border: 1px solid red;
+  opacity: 0;
+  transition: opacity 1s;
+
+}
+
+.img3{
+  width: 100%;
+  height: 100%;
+z-index: -1;
+}
+
+.btn{
+  position: absolute;
+  bottom:-2em;
+  left:0.1em;
+  width: 100%;
+  height: 2em;
+  background-color: red;
+  outline: none;
+  border: 0px;
+  cursor: pointer;
+  font-size: 50px;
+  font-weight: bolder;
+  z-index: -1;
+  color: white;
+
+}
+
+#r-arrow{
+  position: absolute;
+  right: 25px;
+top:7.8em;
+font-size: 110px;
+font-weight:bolder;
+color: red;
+cursor: pointer;
+}
+#l-arrow{
+  position: absolute;
+  left: 25px;
+top:8em;
+font-size: 110px;
+font-weight:bolder;
+color: red;
+cursor: pointer;
+
+}
+
+#search-bar{
+  position: absolute;
+  top:15em;
+  left:12em;
+  transition: top 1s;
+}
+
+.txt-box{
+  width: 20em;
+  height: 3em;
+  font-size: 30px;
+  font-weight: bolder;
+
+}
+.txt-box::placeholder{
+  font-size: 30px;
+  font-weight: bolder;
+  color: red;
+  position: absolute;
+  top:15px;
+  left: 10px;
+  opacity: 0.9;
+}
+.txt-box:focus::placeholder{
+  opacity: 0;
+}
+.search-btn{
+  position: absolute;
+  width: 8em;
+  height: 6.7em;
+  border: 0px;
+background-color: black;
+}
+.search-btn i{
+font-size: 40px;
+font-weight: bolder;
+color: red;
+}
+
+#close2{
+  position: absolute;
+  top:0px;
+  left:-90px;
+  font-size: 80px;
+  color: red;
+  visibility: hidden;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#upload-ticket{
+  position: absolute;
+  top:100em;
+  left:0;
+  width: 100%;
+  height: 100vh;
+}
+.heading-1{
+  position: absolute;
+  top:30px;
+  left:10px;
+  font-size: 90px;
+  font-weight: bolder;
+  color: red;
+}
+.span-1{
+  position: absolute;
+  top:4em;
+  left:2em;
+  font-size: 70px;
+  font-weight: bolder;
+  color: white;
+
+}
+#input-1{
+  position: absolute;
+  top:30em;
+  left:18em;
+  width: 40em;
+  height: 10em;
+  border: 0;
+  outline: none;
+  background-color: white;
+
+}
+.span-2{
+  position: absolute;
+  top:10.5em;
+  left:2em;
+  font-size: 70px;
+  font-weight: bolder;
+  color: white;
+
+}
+#input-2{
+  position: absolute;
+  top:69em;
+  left:18em;
+  width: 40em;
+  height: 3em;
+  border: 0;
+  outline: none;
+  background-color: white;
+
+}
+.span-3{
+  position: absolute;
+  top:18em;
+  left:2em;
+  font-size: 70px;
+  font-weight: bolder;
+  color: white;
+
+}
+#input-3{
+  position: absolute;
+  top:108em;
+  left:18em;
+  width: 40em;
+  height: 3em;
+  border: 0;
+  outline: none;
+  background-color: white;
+
+}
+
+.btn-upload{
+  position: absolute;
+  top:24em;
+  left:2em;
+  height: 3em;
+  background-color: black;
+  font-size: 70px;
+  font-weight: bolder;
+outline: none;
+border:1px solid red;
+color: red;
+width: 10em;
+
+}
